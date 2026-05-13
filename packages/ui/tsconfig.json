@@ -2,6 +2,7 @@
   "extends": "@ai-consultant/config/tsconfig/base",
   "compilerOptions": {
     "baseUrl": ".",
+    "jsx": "preserve",
     "paths": {
       "@/*": [
         "./src/*"
