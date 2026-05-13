@@ -1,0 +1,26 @@
+{
+  "name": "ai-consultant-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "dev:dashboard": "turbo run dev --filter=@ai-consultant/dashboard",
+    "dev:storefront": "turbo run dev --filter=@ai-consultant/storefront",
+    "dev:landing": "turbo run dev --filter=@ai-consultant/landing",
+    "dev:bot": "turbo run dev --filter=@ai-consultant/bot",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "db:generate": "turbo run db:generate --filter=@ai-consultant/db",
+    "db:migrate": "turbo run db:migrate --filter=@ai-consultant/db",
+    "db:push": "turbo run db:push --filter=@ai-consultant/db",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.0"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20"
+  }
+}

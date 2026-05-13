@@ -1,0 +1,16 @@
+{
+  "name": "@ai-consultant/ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "openai": "^4.80.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "@ai-consultant/config": "workspace:*"
+  }
+}
